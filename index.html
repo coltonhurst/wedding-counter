@@ -1,0 +1,35 @@
+<html lang="en">
+    <head>
+        <!-- basic -->
+        <meta charset="utf-8">
+        <title>Colton Hurst</title>
+        <meta name="description" content="My Wedding Counter by Colton Hurst">
+        <meta name="author" content="Colton Hurst">
+        <!-- mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .counter {
+                text-align: center;
+                margin-top: 100px;
+                font-size: 5em;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="counter" class="counter"></div>
+        <script>
+            var oneDayInMillisec = 1000 * 60 * 60 * 24;         // 1 day in milliseconds
+            let now = new Date();
+            let weddingDate = new Date("5/12/2018");            // hard coded b/c it's my wedding date :)
+            let timeUntil = weddingDate - now;
+            let daysUntil = Math.round(timeUntil / oneDayInMillisec);
+            let display = document.getElementById("counter");
+            if (daysUntil > 0)
+                display.innerHTML = daysUntil + " days!";
+            else if (daysUntil == 0)
+                display.innerHTML = "Getting married today!";
+            else
+                display.innerHTML = "I'm married!";
+        </script>
+    </body>
+</html>
