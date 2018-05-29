@@ -5,4 +5,4 @@ It's one page, meant to be super simple. Calculates on a hardcoded date (because
 
 See the countdown clock [here](https://www.coltonhurst.com/projects/wedding-counter/index.html)!
 
-REPO STATUS: project complete! I'm married!
+REPO STATUS: complete! I'm married!
